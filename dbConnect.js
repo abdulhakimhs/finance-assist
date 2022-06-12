@@ -5,5 +5,3 @@ const connect = mongoose.connect('mongodb+srv://ahsanDbUser:ahsanDbUser98@cluste
 const connection = mongoose.connection
 
 connection.on('error', err => console.log(err))
-
-connection.on('connected', () => console.log('Mongo DB Atlas Connection Successfull'))
